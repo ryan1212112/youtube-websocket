@@ -2,10 +2,10 @@
 	"name": "youtube-websocket",
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "MINIFLARE_SUBREQUEST_LIMIT=99999 wrangler dev --local",
-		"deploy": "wrangler publish",
-		"lint": "eslint src --fix",
-		"test": "ts-node ./test/websocket"
+	"dev": "MINIFLARE_SUBREQUEST_LIMIT=99999 wrangler dev --local",
+	"deploy": "wrangler deploy --migration-tag v1",
+	"lint": "eslint src --fix",
+	"test": "ts-node ./test/websocket"
 	},
 	"dependencies": {
 		"itty-router": "^2.6.6",
